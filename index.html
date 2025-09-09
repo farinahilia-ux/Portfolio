@@ -4,19 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
-    }
-    h1 {
-      color: #333;
-    }
+      .gallery {
+			margin: 70px;
+			padding: 20px;
+			float: left;
+		position: relative;
+		} 
+		  
+		.gallery-section {
+  			background-color: white; /* Change to any color you like */
+  			padding: 50px 0; /* Adds spacing above and below the gallery */
+  			text-align: center;
+		}
+		  
+		  .gallery-section a {
+			  margin: 70px;
+			padding: 20px;
+		  }
   </style>
 </head>
-<body>
-  <h1>Hello 👋 Welcome to my Portfolio!</h1>
-  <p>This is my first website hosted on Netlify 🚀</p>
+<body>   
+	  
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+          <li><a href="gallery.html">My Gallery</a></li>
+          </ul>
+      </nav>
+          
+          <!--Creates header-->
+        <header class="banner_img">
+            <div class="banner_text">
+               <h1>Hi, I’m Farina — a visual designer & digital creative</h1>
+            </div>
+        </header>
+          
+    
+          
+              <main>
+                 <h2 class="float-left">Hello! This is my portfolio site 👏🏽</h2>
+                <br>
+            <section>
+                <img src="images/Lol.png" width="600px">
+            </section>
+                
+            <section class="gallery-section">
+                  <div class="gallery-container">
+                
+                
+                       <a target="_blank" href="images/pic01.png">
+                      <img src="images/pic01.png" alt="gallery_pic1" width="300" height="500">
+                       </a>
+                
+                      <a target="_blank" href="images/pic02.png">
+                     <img src="images/pic02.png" alt="gallery_pic2" width="300" height="500" >
+                       </a>
+                
+                      <a target="_blank" href="images/pic03.png">
+                     <img src="images/pic03.png" alt="gallery_pic3" width="300" height="500" >
+                       </a>
+                
+            </div>
+            </section>
+                <br>
+        </main>
+          
+          <footer>&copy; 2025 Farina's Website. All rights reserved.</footer>
+          
+       
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-3.4.1.min.js"></script>
+    
+        <!-- Include all compiled plugins (below), or include individual files as needed --> 
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-4.4.1.js"></script>
 </body>
 </html>
